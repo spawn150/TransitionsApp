@@ -24,7 +24,7 @@ public class ContentTransitionActivity extends Activity {
     @Override
     public void onEnterAnimationComplete() {
         super.onEnterAnimationComplete();
-        TransitionSet set = new TransitionSet().addTransition(new Slide()).setDuration(3000L);
+        TransitionSet set = new TransitionSet().addTransition(new Slide()).setDuration(1000L);
         TransitionManager.beginDelayedTransition(frameLayoutContainer, set);
         frameLayoutContainer.setVisibility(View.VISIBLE);
     }
