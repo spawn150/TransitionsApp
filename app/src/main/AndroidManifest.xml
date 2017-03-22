@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ContentTransitionActivity" />
-        <activity android:name=".ViewsTransitionActivity"></activity>
+
+        <activity
+            android:name=".ContentTransitionActivity"
+            android:theme="@style/AppTheme.ContentTransitions" />
+
+        <activity android:name=".ViewsTransitionActivity" />
     </application>
 
 </manifest>

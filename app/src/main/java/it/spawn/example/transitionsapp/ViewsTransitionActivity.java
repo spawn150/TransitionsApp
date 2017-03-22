@@ -3,7 +3,6 @@ package it.spawn.example.transitionsapp;
 import android.app.Activity;
 import android.os.Bundle;
 import android.transition.Explode;
-import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.TransitionManager;
 import android.view.View;
@@ -30,7 +29,7 @@ public class ViewsTransitionActivity extends Activity {
             }
         });
 
-        viewsContainer.setOnLongClickListener(new View.OnLongClickListener(){
+        viewsContainer.setOnLongClickListener(new View.OnLongClickListener() {
 
             @Override
             public boolean onLongClick(View v) {
@@ -38,7 +37,7 @@ public class ViewsTransitionActivity extends Activity {
                 setViewsVisibility(boxOne, boxTwo, boxThree, boxFour);
                 return true;
             }
-        } );
+        });
 
     }
 

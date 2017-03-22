@@ -1,5 +1,6 @@
 package it.spawn.example.transitionsapp;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button_second_activity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, ContentTransitionActivity.class));
+                startActivity(new Intent(MainActivity.this, ContentTransitionActivity.class), ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
             }
         });
     }
