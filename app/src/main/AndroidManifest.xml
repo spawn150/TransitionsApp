@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ContentTransitionActivity" />
+        <activity android:name=".ViewsTransitionActivity"></activity>
     </application>
 
 </manifest>

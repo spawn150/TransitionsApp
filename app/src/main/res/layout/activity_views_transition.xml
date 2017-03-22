@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="it.spawn.example.transitionsapp.ViewsTransitionActivity">
+
+    <RelativeLayout
+        android:id="@+id/views_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/box_one"
+            style="@style/Box"
+            android:background="@color/red" />
+
+        <View
+            android:id="@+id/box_two"
+            style="@style/Box"
+            android:layout_toEndOf="@id/box_one"
+            android:background="@color/green" />
+
+        <View
+            android:id="@+id/box_three"
+            style="@style/Box"
+            android:layout_below="@id/box_one"
+            android:background="@color/green" />
+
+        <View
+            android:id="@+id/box_four"
+            style="@style/Box"
+            android:layout_below="@id/box_two"
+            android:layout_toEndOf="@id/box_three"
+            android:background="@color/red" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Tap to Slide or Long tap to Explode!"
+        android:layout_marginBottom="24dp"
+        android:textSize="14sp" />
+
+</RelativeLayout>

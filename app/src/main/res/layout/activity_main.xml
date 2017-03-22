@@ -8,9 +8,14 @@
     android:gravity="center"
     tools:context="it.spawn.example.transitionsapp.MainActivity">
 
+    <Button android:id="@+id/button_animate_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animate View"/>
+
     <Button android:id="@+id/button_second_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open Second Activity"/>
+        android:text="Content Transition"/>
 
 </LinearLayout>

@@ -12,6 +12,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        findViewById(R.id.button_animate_view).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ViewsTransitionActivity.class));
+            }
+        });
+
         findViewById(R.id.button_second_activity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
